@@ -1,0 +1,84 @@
+.label1{
+    color:white;
+    
+}
+body{ background-image: linear-gradient(97deg, blue, pink);}
+.div1 {
+    background-color: rgb(250, 250, 250);
+    
+    color: rgb(15, 15, 15);
+    width: auto;
+    height: auto;
+    border-radius: 250px;
+    opacity: 0.4;
+  }
+.div2{
+    padding :auto;
+    margin: auto;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    opacity: 0.8;
+}
+input[type=text] {
+   
+    padding: auto;
+    
+    box-sizing: border-box;
+    border: none;
+    background-color: white;
+    
+    color: rgb(20, 19, 19);
+  }
+.input1{
+  width: 1000px;
+  height: 100px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.input2{
+  width: 100px;
+  height: 200px;
+}
+.button {
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+  }
+img { 
+    width: 5%;
+    height: 5%;
+    padding: auto;
+  }
+div {
+   
+    text-align: center;
+    background-color: white;
+  
+    border: 5px rgb(247, 245, 245) solid;
+   
+   
+  }
+h1{text-align:center; font-family:verdana; font-size:60px}
+form{text-align:center;font-family:verdana;}
+input{text-align:center;font-family:verdana;}
+
+p{text-align:center;}
