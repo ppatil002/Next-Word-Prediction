@@ -1,8 +1,10 @@
-$("form#submit input").on('keypress', function (event) {
-    event.preventDefault();
-    if (event.which === 32) {
-        $('button.submit').trigger('click');
-    }
-});
-
-// when space bar is pressed form should be submited
+document.body.onkeyup = function(e){
+  if(e.keyCode == 32){
+      function submitForm() {
+          let form = document.getElementById("form1");
+          form.submit();
+      }
+      submitForm();
+      
+  }
+}
