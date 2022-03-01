@@ -3,19 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "style.css">
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is my page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <title>Text Predictor</title>
 </head>
 
 <body>
-    <h2>Text input fields</h2>
-    <form name="passdata" action="." method="post">
-        <label>Write:</label>
-        <input type="text" name="name" value="{{n}}">
-        <input type="submit" value="Submit">
+    
+    <div class ="div1"><h1><img src="Picture2.jpg" alt="chat">Text Predictor</h1></div>
+    <hr color = "white" width = "20">
+    <hr color = "white" >
+    <br>
+    <form id = "form1"; name="passdata" ;action="."; method="post"; >
+        <label class="label1">Type here:</label>
+        <input class ="input1" type="text" name="name" value="{{n}}">
+        
+    
+</form>
+    <br>
+    
+
+    
+    <br>
+    
+    <form name="passdata" action="."; method="post"; >
+    <label class="label1">Next word prediction:</label>
+    <p><div class ="div2">{{predicted_text}}</div></p>
+    <button class ="button button3" type="submit">
+        Correct
+    </button>
     </form>
-    <p>{{predicted_text}}</p>
+    <br>
+    <br>
+    <form name="passdata" action="." method="post" >
+        <label class="label1" >Did you mean: </label>
+        <input type="text" name="name" value="{{n}}">
+        <button class ="button button3" type="submit">
+        Yes
+        </button>
+      
+    </form>
 
     <script src="Script.js"></script>
 </body>
