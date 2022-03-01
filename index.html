@@ -11,40 +11,41 @@
 </head>
 
 <body>
-    
-    <div class ="div1"><h1><img src="Picture2.jpg" alt="chat">Text Predictor</h1></div>
-    <hr color = "white" width = "20">
-    <hr color = "white" >
-    <br>
-    <form id = "form1"; name="passdata" ;action="."; method="post"; >
-        <label class="label1">Type here:</label>
-        <input class ="input1" type="text" name="name" value="{{n}}">
-        
-    
-</form>
-    <br>
-    
+    <div class="div1">
+    <h1><img src="Picture2.jpg" alt="chat">Text Predictor</h1>
+  </div>
+  <hr color="white" width="20">
+  <hr color="white">
+  <br>
+  <form id="form1" name="passdata" action="." method="post">
+    <label class="label1">Type here:</label>
+    <input class="input1" type="text" name="name" id="text_box" value="{{n}}">
+  </form>
+  <br>
 
-    
-    <br>
-    
-    <form name="passdata" action="."; method="post"; >
+
+  <br>
+
+  <form name="passdata" action="." method="post">
     <label class="label1">Next word prediction:</label>
-    <p><div class ="div2">{{predicted_text}}</div></p>
-    <button class ="button button3" type="submit">
-        Correct
-    </button>
-    </form>
-    <br>
-    <br>
-    <form name="passdata" action="." method="post" >
-        <label class="label1" >Did you mean: </label>
-        <input type="text" name="name" value="{{n}}">
-        <button class ="button button3" type="submit">
-        Yes
-        </button>
-      
-    </form>
+    <div class="div2">
+      <p id="predicted_text">
+        {{pre}}
+      </p>
+    </div>
+  </form>
+  <button class="button button3" onclick="concattext_with_predicted()" type="reset">
+    Correct
+  </button>
+  <br>
+  <br>
+  <form name="passdata" action="." method="post">
+    <label class="label1">Did you mean: </label>
+    <input type="text" name="name"  id="correct_spelling" value="{{correct_spelling}}">
+  </form>
+  <button class="button button3" onclick="correct_incorrect_word()" type="reset">
+    Yes
+  </button>
 
     <script src="Script.js"></script>
 </body>
